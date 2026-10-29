@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#102b4e">
+<title>Love Partnership Parting Agreement | Edward Omondi & Edith Amondi</title>
+<style>
+:root{--navy:#102b4e;--gold:#b88927;--ink:#1b2b40;--muted:#64748b;--line:#d9e1ec;--paper:#fff}
+*{box-sizing:border-box}
+body{margin:0;background:#eef2f7;color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
+.toolbar{position:sticky;top:0;z-index:5;background:#102b4e;color:#fff;padding:12px 16px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;box-shadow:0 3px 12px #0002}
+button{font:inherit;border:0;border-radius:9px;padding:11px 15px;cursor:pointer;font-weight:700}
+.primary{background:#d7b35c;color:#14243a}.secondary{background:#fff;color:#102b4e}.danger{background:#fff0f0;color:#9c2222;border:1px solid #f1caca}
+button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #4c9ffe;outline-offset:2px}
+.page{max-width:900px;margin:24px auto;padding:clamp(20px,5vw,56px);background:var(--paper);box-shadow:0 10px 36px #102b4e14;border:1px solid #e6ebf2}
+.topmark{text-align:center;color:var(--gold);font-size:30px;letter-spacing:7px;margin-bottom:4px}
+.rule{height:1px;background:var(--gold);margin:12px 0}
+h1,h2,h3{color:var(--navy);font-family:Georgia,'Times New Roman',serif}
+h1{text-align:center;text-transform:uppercase;letter-spacing:1.5px;font-size:clamp(27px,5vw,43px);line-height:1.12;margin:8px 0}
+.subtitle{text-align:center;text-transform:uppercase;letter-spacing:3px;font:clamp(17px,3vw,24px) Georgia,serif;margin:8px 0;color:var(--navy)}
+.tagline{text-align:center;color:#314e72;font:italic 17px Georgia,serif;margin:14px 0 28px}
+.intro{margin:22px 0}
+.date-line{display:inline-block;min-width:170px;border-bottom:1px solid var(--navy);padding:0 5px}
+.partners{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:22px 0}
+.partner{padding:8px 4px}
+.partner:first-child{border-right:1px solid var(--gold)}
+.partner h2{font-size:21px;margin:0 0 4px}
+.small{font-size:14px;color:var(--muted)}
+section{margin:22px 0}
+section h3{font-size:19px;margin:0 0 5px}
+section p{margin:5px 0 10px}
+.clause{padding-left:12px}
+.closing{text-align:center;color:var(--navy);font:italic 19px Georgia,serif;margin:28px 0}
+.signatures{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:26px}
+.signer{border-top:2px solid var(--gold);padding-top:15px;min-width:0}
+.signer h2{font-size:20px;margin:0}
+.signer label{display:block;font-size:14px;font-weight:700;margin:12px 0 5px}
+input[type=text],input[type=date]{width:100%;padding:11px;border:1px solid #cbd5e1;border-radius:8px;background:#fff;color:var(--ink);font:inherit}
+.signature-preview{height:82px;border:1px dashed #9fb0c7;border-radius:8px;background:#fbfcfe;display:flex;align-items:center;justify-content:center;margin-top:10px;overflow:hidden;color:#94a3b8}
+.signature-preview img{max-width:100%;max-height:78px;object-fit:contain}
+.signature-preview .typed{font:italic 27px 'Brush Script MT','Segoe Script',cursive;color:#102b4e}
+.sign-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.sign-actions button{font-size:13px;padding:9px 11px}
+.pad-wrap{display:none;border:1px solid var(--line);border-radius:10px;padding:10px;margin-top:10px;background:#f8fafc}
+.pad-wrap.open{display:block}
+canvas{width:100%;height:150px;display:block;background:#fff;border:1px solid #cbd5e1;border-radius:7px;touch-action:none}
+.pad-note{font-size:12px;color:var(--muted);margin:5px 0}
+.typed-row{display:none;margin-top:10px}.typed-row.open{display:block}
+.confirm{margin:26px 0;padding:16px;border:1px solid var(--line);border-radius:10px;background:#f8fafc}
+.confirm label{display:flex;gap:10px;align-items:flex-start;margin:9px 0}
+.confirm input{margin-top:5px;accent-color:var(--navy)}
+.status{font-size:13px;color:#475569;margin-top:8px;min-height:18px}
+footer{text-align:center;color:var(--navy);font-size:12px;letter-spacing:3px;margin-top:26px}
+.notice{font-size:12px;color:#64748b;border-top:1px solid var(--line);padding-top:12px;margin-top:16px}
+@media(max-width:600px){.page{margin:10px;padding:20px 16px}.partners,.signatures{grid-template-columns:1fr}.partner:first-child{border-right:0;border-bottom:1px solid var(--gold);padding-bottom:18px}.tagline{font-size:15px}.toolbar{position:static}.signatures{gap:30px}}
+@media print{body{background:#fff}.toolbar,.sign-actions,.pad-wrap,.typed-row,.confirm,.screen-only{display:none!important}.page{margin:0;max-width:none;padding:12mm;box-shadow:none;border:0}.signature-preview{border:0;height:65px}.signature-preview img{max-height:60px}.signature-preview .typed{font-size:24px}.notice{font-size:10px}button{display:none!important}}
+</style>
+</head>
+<body>
+<div class="toolbar screen-only">
+  <button class="primary" id="downloadBtn">Download signed PDF</button>
+  <button class="secondary" id="printBtn">Print / Save as PDF</button>
+  <button class="secondary" id="resetBtn">Clear all signatures</button>
+</div>
+
+<main class="page" id="agreement">
+  <div class="topmark">♡</div><div class="rule"></div>
+  <h1>Love Partnership</h1>
+  <div class="subtitle">Parting Agreement</div>
+  <div class="tagline">Different paths · Same respect · Always good people</div>
+
+  <p class="intro">This Love Partnership Parting Agreement (“Agreement”) is made on <span class="date-line" id="agreementDateText">________________</span>, between:</p>
+
+  <div class="partners">
+    <div class="partner"><h2>EDWARD OMONDI</h2><div>Hereinafter referred to as “Partner 1”</div></div>
+    <div class="partner"><h2>EDITH AMONDI</h2><div>Hereinafter referred to as “Partner 2”</div></div>
+  </div>
+
+  <p>Together referred to as “the Partners” and individually as “a Partner,” the Partners have decided to end their romantic relationship and part ways with mutual respect and understanding. This Agreement sets out their intentions for parting and moving forward.</p>
+
+  <section><h3>1. PURPOSE</h3><p class="clause">The purpose of this Agreement is to bring closure to the relationship, reduce misunderstandings, and help both Partners move forward in a healthy and respectful manner.</p></section>
+  <section><h3>2. TERMS OF PARTING</h3>
+    <p class="clause">2.1 Both Partners agree to end their romantic relationship and continue their lives as individuals.</p>
+    <p class="clause">2.2 Neither Partner is expected to continue romantic involvement unless both freely agree otherwise in the future.</p>
+    <p class="clause">2.3 Both Partners will respect each other’s privacy, personal space, dignity, and future relationships.</p>
+    <p class="clause">2.4 Any shared belongings, responsibilities, or commitments (if any) will be discussed and settled fairly and amicably.</p>
+    <p class="clause">2.5 Both Partners will aim to avoid harassment, threats, unnecessary conflict, and hurtful communication.</p>
+  </section>
+  <section><h3>3. FINAL ACKNOWLEDGEMENT</h3><p class="clause">By signing below, each Partner confirms that they have read this personal agreement and are signing voluntarily. Each Partner understands that this is a personal relationship document, not a court order or a substitute for legal advice.</p></section>
+
+  <div class="closing">“Thank you for the memories, and all the lessons.<br>Here’s to new beginnings.”</div>
+
+  <div class="signatures">
+    <div class="signer" data-person="edward">
+      <h2>EDWARD OMONDI</h2><div class="small">Partner 1</div>
+      <label for="edwardDate">Date signed</label><input type="date" id="edwardDate">
+      <div class="signature-preview" id="edwardPreview"><span>No signature added yet</span></div>
+      <div class="sign-actions">
+        <button class="primary" type="button" data-open="edwardPad">Draw signature</button>
+        <button class="secondary" type="button" data-open="edwardTyped">Type signature</button>
+        <button class="danger" type="button" data-clear="edward">Clear</button>
+      </div>
+      <div class="pad-wrap" id="edwardPad">
+        <p><strong>Draw with your finger</strong></p><canvas id="edwardCanvas" aria-label="Edward's signature drawing pad"></canvas>
+        <div class="pad-note">Sign inside the box. Use the clear button if you want to start again.</div>
+        <div class="sign-actions"><button class="secondary" type="button" data-wipe="edward">Clear pad</button><button class="primary" type="button" data-save-draw="edward">Use this signature</button></div>
+      </div>
+      <div class="typed-row" id="edwardTyped"><label for="edwardTypedInput">Type your full name as your signature</label><input type="text" id="edwardTypedInput" placeholder="Edward Omondi"><div class="sign-actions"><button class="primary" type="button" data-save-typed="edward">Use typed signature</button></div></div>
+      <div class="status" id="edwardStatus" aria-live="polite"></div>
+    </div>
+
+    <div class="signer" data-person="edith">
+      <h2>EDITH AMONDI</h2><div class="small">Partner 2</div>
+      <label for="edithDate">Date signed</label><input type="date" id="edithDate">
+      <div class="signature-preview" id="edithPreview"><span>No signature added yet</span></div>
+      <div class="sign-actions">
+        <button class="primary" type="button" data-open="edithPad">Draw signature</button>
+        <button class="secondary" type="button" data-open="edithTyped">Type signature</button>
+        <button class="danger" type="button" data-clear="edith">Clear</button>
+      </div>
+      <div class="pad-wrap" id="edithPad">
+        <p><strong>Draw with your finger</strong></p><canvas id="edithCanvas" aria-label="Edith's signature drawing pad"></canvas>
+        <div class="pad-note">Sign inside the box. Use the clear button if you want to start again.</div>
+        <div class="sign-actions"><button class="secondary" type="button" data-wipe="edith">Clear pad</button><button class="primary" type="button" data-save-draw="edith">Use this signature</button></div>
+      </div>
+      <div class="typed-row" id="edithTyped"><label for="edithTypedInput">Type your full name as your signature</label><input type="text" id="edithTypedInput" placeholder="Edith Amondi"><div class="sign-actions"><button class="primary" type="button" data-save-typed="edith">Use typed signature</button></div></div>
+      <div class="status" id="edithStatus" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <div class="confirm screen-only">
+    <strong>Before downloading</strong>
+    <label><input type="checkbox" id="edwardConfirm"> <span>Edward confirms he has reviewed the agreement and is signing voluntarily.</span></label>
+    <label><input type="checkbox" id="edithConfirm"> <span>Edith confirms she has reviewed the agreement and is signing voluntarily.</span></label>
+    <p class="small">Both confirmations and both signatures are required to create the signed PDF.</p>
+    <div id="confirmStatus" class="status" aria-live="polite"></div>
+  </div>
+
+  <div class="rule"></div>
+  <footer>RESPECT &nbsp; • &nbsp; GROWTH &nbsp; • &nbsp; HAPPINESS</footer>
+  <div class="notice">Personal relationship agreement only. This document is not a marriage-divorce instrument or a guarantee of legal enforceability. Each person should keep a copy of the completed document.</div>
+</main>
+
+<script>
+const people = ["edward","edith"];
+const signatureData = {edward:null, edith:null};
+const typedNames = {edward:"Edward Omondi", edith:"Edith Amondi"};
+const today = new Date();
+document.getElementById("agreementDateText").textContent = today.toLocaleDateString(undefined,{year:"numeric",month:"long",day:"numeric"});
+people.forEach(p => {
+  const date = document.getElementById(p+"Date");
+  date.value = today.getFullYear()+"-"+String(today.getMonth()+1).padStart(2,"0")+"-"+String(today.getDate()).padStart(2,"0");
+  setupCanvas(p);
+});
+function setupCanvas(person){
+  const canvas=document.getElementById(person+"Canvas"), ctx=canvas.getContext("2d");
+  let drawing=false, moved=false, last={x:0,y:0};
+  function resize(){
+    const old = moved ? canvas.toDataURL() : null;
+    const ratio=window.devicePixelRatio||1;
+    const rect=canvas.getBoundingClientRect();
+    canvas.width=Math.max(1,Math.floor(rect.width*ratio)); canvas.height=Math.max(1,Math.floor(rect.height*ratio));
+    ctx.setTransform(ratio,0,0,ratio,0,0); ctx.lineWidth=2.2; ctx.lineCap="round"; ctx.lineJoin="round"; ctx.strokeStyle="#102b4e";
+    if(old){const img=new Image();img.onload=()=>ctx.drawImage(img,0,0,rect.width,rect.height);img.src=old;}
+  }
+  function pos(e){const r=canvas.getBoundingClientRect();return{x:e.clientX-r.left,y:e.clientY-r.top};}
+  canvas.addEventListener("pointerdown",e=>{e.preventDefault();drawing=true;moved=true;canvas.setPointerCapture(e.pointerId);last=pos(e);ctx.beginPath();ctx.moveTo(last.x,last.y);});
+  canvas.addEventListener("pointermove",e=>{if(!drawing)return;e.preventDefault();const p=pos(e);ctx.lineTo(p.x,p.y);ctx.stroke();last=p;});
+  const end=()=>{drawing=false;};canvas.addEventListener("pointerup",end);canvas.addEventListener("pointercancel",end);
+  canvas._clear=()=>{ctx.clearRect(0,0,canvas.width,canvas.height);moved=false;};
+  canvas._hasInk=()=>moved;
+  canvas._resize=resize;
+  resize();
+}
+window.addEventListener("resize",()=>people.forEach(p=>document.getElementById(p+"Canvas")._resize()));
+function hideEditors(p){document.getElementById(p+"Pad").classList.remove("open");document.getElementById(p+"Typed").classList.remove("open");}
+document.querySelectorAll("[data-open]").forEach(btn=>btn.addEventListener("click",()=>{const id=btn.dataset.open;const p=id.startsWith("edward")?"edward":"edith";hideEditors(p);document.getElementById(id).classList.add("open");}));
+document.querySelectorAll("[data-wipe]").forEach(btn=>btn.addEventListener("click",()=>document.getElementById(btn.dataset.wipe+"Canvas")._clear()));
+document.querySelectorAll("[data-save-draw]").forEach(btn=>btn.addEventListener("click",()=>{
+ const p=btn.dataset.saveDraw, c=document.getElementById(p+"Canvas");
+ if(!c._hasInk()){document.getElementById(p+"Status").textContent="Please draw your signature first.";return;}
+ signatureData[p]=c.toDataURL("image/png");typedNames[p]=null;showSignature(p);hideEditors(p);
+ document.getElementById(p+"Status").textContent="Signature added. Check the preview below.";
+}));
+document.querySelectorAll("[data-save-typed]").forEach(btn=>btn.addEventListener("click",()=>{
+ const p=btn.dataset.saveTyped, value=document.getElementById(p+"TypedInput").value.trim();
+ if(!value){document.getElementById(p+"Status").textContent="Enter a name to use as a typed signature.";return;}
+ signatureData[p]="typed";typedNames[p]=value;showSignature(p);hideEditors(p);
+ document.getElementById(p+"Status").textContent="Typed signature added. Check the preview below.";
+}));
+function showSignature(p){
+ const preview=document.getElementById(p+"Preview");preview.innerHTML="";
+ if(signatureData[p]==="typed"){const span=document.createElement("span");span.className="typed";span.textContent=typedNames[p];preview.appendChild(span);}
+ else if(signatureData[p]){const img=document.createElement("img");img.src=signatureData[p];img.alt="Digital signature";preview.appendChild(img);}
+ else preview.innerHTML="<span>No signature added yet</span>";
+}
+document.querySelectorAll("[data-clear]").forEach(btn=>btn.addEventListener("click",()=>{
+ const p=btn.dataset.clear;signatureData[p]=null;typedNames[p]=p==="edward"?"Edward Omondi":"Edith Amondi";
+ document.getElementById(p+"Canvas")._clear();document.getElementById(p+"TypedInput").value="";
+ document.getElementById(p+"Confirm").checked=false;document.getElementById(p+"Status").textContent="Signature cleared.";showSignature(p);hideEditors(p);
+}));
+function ready(){
+ const missing=[];
+ people.forEach(p=>{if(!signatureData[p])missing.push((p==="edward"?"Edward":"Edith")+" signature");if(!document.getElementById(p+"Confirm").checked)missing.push((p==="edward"?"Edward":"Edith")+" confirmation");if(!document.getElementById(p+"Date").value)missing.push((p==="edward"?"Edward":"Edith")+" date");});
+ const s=document.getElementById("confirmStatus");
+ if(missing.length){s.textContent="Please complete: "+missing.join(", ")+ ".";return false;}
+ s.textContent="Both signatures, dates and confirmations are complete.";return true;
+}
+async function downloadPDF(){
+ if(!ready()){document.getElementById("confirmStatus").scrollIntoView({behavior:"smooth",block:"center"});return;}
+ const btn=document.getElementById("downloadBtn"), old=btn.textContent;btn.textContent="Preparing PDF…";btn.disabled=true;
+ try{
+   if(!window.html2pdf){
+     const script=document.createElement("script");script.src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js";
+     document.head.appendChild(script);await new Promise((resolve,reject)=>{script.onload=resolve;script.onerror=reject;setTimeout(()=>reject(new Error("Library timeout")),12000);});
+   }
+   document.querySelector(".confirm").classList.add("pdf-confirm");
+   const opt={margin:[8,8,8,8],filename:"Love-Partnership-Parting-Agreement-Edward-Edith.pdf",image:{type:"jpeg",quality:0.98},html2canvas:{scale:2,useCORS:true,backgroundColor:"#ffffff"},jsPDF:{unit:"mm",format:"a4",orientation:"portrait"},pagebreak:{mode:["css","legacy"]}};
+   await window.html2pdf().set(opt).from(document.getElementById("agreement")).toPdf().get("pdf").then(pdf=>{
+      const pages=pdf.internal.getNumberOfPages();for(let i=pages;i>=1;i--){pdf.setPage(i);pdf.setFontSize(8);pdf.setTextColor(100);pdf.text("Personal agreement • Page "+i+" of "+pages,105,290,{align:"center"});}
+   }).save();
+ }catch(e){alert("Automatic PDF download could not start. Use “Print / Save as PDF” instead. An internet connection may be needed for the PDF helper.");}
+ finally{btn.textContent=old;btn.disabled=false;}
+}
+document.getElementById("downloadBtn").addEventListener("click",downloadPDF);
+document.getElementById("printBtn").addEventListener("click",()=>{if(!ready())return;window.print();});
+document.getElementById("resetBtn").addEventListener("click",()=>{if(!confirm("Clear both signatures and confirmations?"))return;people.forEach(p=>{signatureData[p]=null;typedNames[p]=p==="edward"?"Edward Omondi":"Edith Amondi";document.getElementById(p+"Canvas")._clear();document.getElementById(p+"TypedInput").value="";document.getElementById(p+"Confirm").checked=false;document.getElementById(p+"Status").textContent="";showSignature(p);hideEditors(p);});document.getElementById("confirmStatus").textContent="All signatures and confirmations cleared.";});
+</script>
+</body>
+</html>
